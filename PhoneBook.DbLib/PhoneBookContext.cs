@@ -10,7 +10,7 @@ public class PhoneBookContext :DbContext
     public DbSet<Person> Persons { get; set; }
     public DbSet<Phone> Phones { get; set; }
     
-    protected PhoneBookContext(string connectionString)
+    public PhoneBookContext(string connectionString)
     {
         _connectionString = connectionString;
 
