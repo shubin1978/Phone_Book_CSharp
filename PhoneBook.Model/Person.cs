@@ -17,6 +17,6 @@ public record Person
     
     [Column("first_name")]
     public string? FirstName { get; set; }
-    
-    private IEnumerable<Phone> Phones { get; set; }
+
+    public IEnumerable<Phone> Phones { get; set; } = new List<Phone>();
 }
